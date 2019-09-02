@@ -1,0 +1,37 @@
+{
+  "name": "lunara",
+  "version": "1.0.0",
+  "description": "Algorithms and data structures implemented in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run build:prod && npm run build:dev",
+    "build:prod": "webpack --config webpack.config.js --progress --colors --mode production",
+    "build:dev": "webpack --config webpack.config.js --progress --colors --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AonanHe/Lunara.git"
+  },
+  "keywords": [
+    "algorithms"
+  ],
+  "author": "Aonan He",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AonanHe/Lunara/issues"
+  },
+  "homepage": "https://github.com/AonanHe/Lunara#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.16.0",
+    "jest": "^24.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
