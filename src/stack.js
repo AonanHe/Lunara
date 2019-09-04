@@ -13,7 +13,7 @@ class Stack {
    * Push element val onto stack.
    *
    * @memberOf Stack
-   * @param {number} val
+   * @param {*} val
    * @return {void}
    */
   push(val) {
@@ -24,7 +24,7 @@ class Stack {
    * Removes the element on top of the stack and returns that element.
    *
    * @memberOf Stack
-   * @return {number}
+   * @return {*}
    */
   pop() {
     return this.stack.pop()
@@ -34,7 +34,7 @@ class Stack {
    * Get the top element.
    *
    * @memberOf Stack
-   * @return {number}
+   * @return {*}
    */
   top() {
     return this.stack[this.stack.length - 1]

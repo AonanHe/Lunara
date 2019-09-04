@@ -10,8 +10,14 @@ describe('stack', () => {
   test('should pop element', () => {
     const stack = new Stack()
     stack.push(10)
+    stack.push(20)
+    stack.push(30)
+    expect(stack.pop()).toBe(30)
+    expect(stack.size()).toBe(2)
+    expect(stack.pop()).toBe(20)
     expect(stack.pop()).toBe(10)
     expect(stack.pop()).toBe(undefined)
+    expect(stack.size()).toBe(0)
   })
 
   test('should get the top element', () => {
@@ -19,6 +25,7 @@ describe('stack', () => {
     stack.push('A')
     stack.push('B')
     expect(stack.top()).toBe('B')
+    expect(stack.size()).toBe(2)
   })
 
   test('should get the size', () => {
