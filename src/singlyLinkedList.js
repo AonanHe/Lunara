@@ -1,7 +1,5 @@
 /**
  * Creates a list node
- *
- * @private
  */
 function ListNode(val) {
   this.val = val
