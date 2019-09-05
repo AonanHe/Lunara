@@ -5,5 +5,6 @@ export { default as lcm } from './lcm'
 // Data structures
 export { default as Stack } from './stack'
 export { default as Queue } from './queue'
-export { default as SinglyLinkedList } from './singlyLinkedList'
 export { default as PriorityQueue } from './priorityQueue'
+export { default as SinglyLinkedList } from './singlyLinkedList'
+export { default as DoublyLinkedList } from './doublyLinkedList'
