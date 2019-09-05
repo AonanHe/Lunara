@@ -18,7 +18,7 @@ class DoublyLinkedList extends SinglyLinkedList {
    */
   constructor() {
     super()
-    this._prev = null
+    this._tail = null
   }
 
   /**
