@@ -14,8 +14,8 @@ class SinglyLinkedList {
    * @constructor
    */
   constructor() {
-    this.head = null
-    this.length = 0
+    this._head = null
+    this._length = 0
   }
 
   /**
@@ -27,8 +27,8 @@ class SinglyLinkedList {
    * @return {*}
    */
   get(index) {
-    if (index < 0 || this.length <= index) return -1
-    let cursor = this.head
+    if (index < 0 || this._length <= index) return -1
+    let cursor = this._head
     for (let i = 0; i < index; i += 1) {
       cursor = cursor.next
     }
@@ -44,16 +44,16 @@ class SinglyLinkedList {
    */
   append(val) {
     const node = new ListNode(val)
-    let cursor = this.head
+    let cursor = this._head
     if (!cursor) {
-      this.head = node
+      this._head = node
     } else {
       while (cursor.next) {
         cursor = cursor.next
       }
       cursor.next = node
     }
-    this.length += 1
+    this._length += 1
   }
 
   /**
@@ -68,20 +68,20 @@ class SinglyLinkedList {
    * @return {void}
    */
   insert(index, val) {
-    if (index < 0 || index > this.length) return
+    if (index < 0 || index > this._length) return
     const node = new ListNode(val)
     if (index === 0) {
-      node.next = this.head
-      this.head = node
+      node.next = this._head
+      this._head = node
     } else {
-      let cursor = this.head
+      let cursor = this._head
       for (let i = 0; i < index - 1; i += 1) {
         cursor = cursor.next
       }
       node.next = cursor.next
       cursor.next = node
     }
-    this.length += 1
+    this._length += 1
   }
 
   /**
@@ -92,17 +92,17 @@ class SinglyLinkedList {
    * @return {void}
    */
   removeAt(index) {
-    if (index < 0 || index >= this.length) return
+    if (index < 0 || index >= this._length) return
     if (index === 0) {
-      this.head = this.head.next
+      this._head = this._head.next
     } else {
-      let cursor = this.head
+      let cursor = this._head
       for (let i = 0; i < index - 1; i += 1) {
         cursor = cursor.next
       }
       cursor.next = cursor.next.next
     }
-    this.length -= 1
+    this._length -= 1
   }
 
   /**
@@ -112,7 +112,7 @@ class SinglyLinkedList {
    * @return {boolean}
    */
   isEmpty() {
-    return this.length === 0
+    return this._length === 0
   }
 
   /**
@@ -122,7 +122,17 @@ class SinglyLinkedList {
    * @return {number}
    */
   size() {
-    return this.length
+    return this._length
+  }
+
+  /**
+   * Returns the head of the singly linked list.
+   *
+   * @memberOf singlyLinkedList
+   * @return {ListNode}
+   */
+  getHead() {
+    return this._head
   }
 }
 

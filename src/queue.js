@@ -6,7 +6,7 @@ class Queue {
    * @constructor
    */
   constructor() {
-    this.queue = []
+    this._queue = []
   }
 
   /**
@@ -17,7 +17,7 @@ class Queue {
    * @return {void}
    */
   push(val) {
-    this.queue.push(val)
+    this._queue.push(val)
   }
 
   /**
@@ -27,7 +27,7 @@ class Queue {
    * @return {*}
    */
   pop() {
-    return this.queue.shift()
+    return this._queue.shift()
   }
 
   /**
@@ -37,7 +37,7 @@ class Queue {
    * @return {*}
    */
   peek() {
-    return this.queue[0]
+    return this._queue[0]
   }
 
   /**
@@ -47,7 +47,7 @@ class Queue {
    * @return {boolean}
    */
   isEmpty() {
-    return this.queue.length === 0
+    return this._queue.length === 0
   }
 
   /**
@@ -57,7 +57,7 @@ class Queue {
    * @return {number}
    */
   size() {
-    return this.queue.length
+    return this._queue.length
   }
 
   /**
@@ -67,7 +67,7 @@ class Queue {
    * @return {void}
    */
   clear() {
-    this.queue = []
+    this._queue = []
   }
 }
 

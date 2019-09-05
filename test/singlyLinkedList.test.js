@@ -1,7 +1,7 @@
 import SinglyLinkedList from '../src/singlyLinkedList'
 
 function traverse(linkedList) {
-  let p = linkedList.head
+  let p = linkedList.getHead()
   const result = []
   while (p) {
     result.push(p.val)

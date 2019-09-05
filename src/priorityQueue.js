@@ -24,18 +24,18 @@ class PriorityQueue extends Queue {
   push(val, priority) {
     const item = new QueueItem(val, priority)
     if (this.isEmpty()) {
-      this.queue.push(item)
+      this._queue.push(item)
     } else {
       let added = false
-      for (let i = 0; i < this.queue.length; i += 1) {
-        if (item.priority > this.queue[i].priority) {
-          this.queue.splice(i, 0, item)
+      for (let i = 0; i < this._queue.length; i += 1) {
+        if (item.priority > this._queue[i].priority) {
+          this._queue.splice(i, 0, item)
           added = true
           break
         }
       }
       if (!added) {
-        this.queue.push(item)
+        this._queue.push(item)
       }
     }
   }

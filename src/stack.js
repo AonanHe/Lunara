@@ -6,7 +6,7 @@ class Stack {
    * @constructor
    */
   constructor() {
-    this.stack = []
+    this._stack = []
   }
 
   /**
@@ -17,7 +17,7 @@ class Stack {
    * @return {void}
    */
   push(val) {
-    this.stack.push(val)
+    this._stack.push(val)
   }
 
   /**
@@ -27,7 +27,7 @@ class Stack {
    * @return {*}
    */
   pop() {
-    return this.stack.pop()
+    return this._stack.pop()
   }
 
   /**
@@ -37,7 +37,7 @@ class Stack {
    * @return {*}
    */
   top() {
-    return this.stack[this.stack.length - 1]
+    return this._stack[this._stack.length - 1]
   }
 
   /**
@@ -47,7 +47,7 @@ class Stack {
    * @return {boolean}
    */
   isEmpty() {
-    return this.stack.length === 0
+    return this._stack.length === 0
   }
 
   /**
@@ -57,7 +57,7 @@ class Stack {
    * @return {number}
    */
   size() {
-    return this.stack.length
+    return this._stack.length
   }
 
   /**
@@ -67,7 +67,7 @@ class Stack {
    * @return {void}
    */
   clear() {
-    this.stack = []
+    this._stack = []
   }
 }
 
