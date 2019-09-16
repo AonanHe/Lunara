@@ -1,6 +1,10 @@
 // Math
 export { default as gcd } from './gcd'
 export { default as lcm } from './lcm'
+export { default as isSubSet } from './isSubSet'
+export { default as unionSet } from './unionSet'
+export { default as differenceSet } from './differenceSet'
+export { default as intersectionSet } from './intersectionSet'
 
 // Data structures
 export { default as Stack } from './stack'
