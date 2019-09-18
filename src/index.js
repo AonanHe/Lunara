@@ -16,3 +16,6 @@ export { default as HashTable } from './hashTable'
 export { default as Heap } from './heap'
 export { default as BinarySearchTree } from './binarySearchTree'
 export { default as Graph } from './graph'
+
+// Algorithms
+export { default as GraphTraversal } from './graphTraversal'
