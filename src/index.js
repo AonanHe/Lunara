@@ -5,6 +5,7 @@ export { default as isSubSet } from './isSubSet'
 export { default as unionSet } from './unionSet'
 export { default as differenceSet } from './differenceSet'
 export { default as intersectionSet } from './intersectionSet'
+export { default as fibonacci } from './fibonacci'
 
 // Data structures
 export { default as Stack } from './stack'
